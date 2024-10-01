@@ -1,21 +1,21 @@
-import { ADATAUTOLISTA } from "./adatok.js"
-class Model{
-    #lista
-    constructor(){
-        this.#lista = ADATAUTOLISTA
-    }
+import { ADATAUTOLISTA } from "./adatok.js";
+class Model {
+  #lista;
+  #index
+  constructor() {
+    this.#lista = ADATAUTOLISTA;
+    this.#index = 0;
+  }
 
-    torol(id){
-        this.#lista.forEach(element => {
-            if(this.#lista[element].id == id){
-                this.#lista[element].splice();
-            }
-        });
+  torol(id) {
+    if (this.#lista[this.#index] == id) {
+      this.#lista[element].splice(this.#lista, id);
     }
+  }
 
-    getList(){
-        return this.#lista
-    }
+  getList() {
+    return this.#lista;
+  }
 }
 
-export default Model
+export default Model;

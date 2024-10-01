@@ -31,5 +31,21 @@ export const ADATAUTOLISTA =
         uzemanyag: "dízel",
         evjarat: 2012,
         darabszam: 20
+    },
+    {
+        id: 4,
+        marka: "Toyota",
+        tipus: 'Camry',
+        uzemanyag: "benzin",
+        evjarat: 2016,
+        darabszam: 20
+    },
+    {
+        id: 5,
+        marka: "Opel",
+        tipus: 'Insignia',
+        uzemanyag: "dízel",
+        evjarat: 2012,
+        darabszam: 20
     }
 ]
