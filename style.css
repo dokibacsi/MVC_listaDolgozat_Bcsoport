@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(128, 128, 128, 0.5);
+    text-align: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+li span{
+    width: 100%;
+    max-width: 100px;
+}
