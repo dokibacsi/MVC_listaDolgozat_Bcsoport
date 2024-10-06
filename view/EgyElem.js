@@ -15,7 +15,7 @@ class EgyElem{
     
     osszeallitEgyElem(elem, index, szuloElem){
         let text = `<li id='kartya'>`
-        text += `<button class="katt${index}">Katt</button>`
+        text += `<button class="katt${index}">Törlés</button>`
         text += `<span class="marka"><p>${elem.marka}</p></span>`
         text += `<span class="tipus"><p>${elem.tipus}</p></span>`
         text += `<span class="uzemanyag"><p>${elem.uzemanyag}</p></span>`
