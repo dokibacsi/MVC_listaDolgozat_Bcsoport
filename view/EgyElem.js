@@ -2,10 +2,12 @@ class EgyElem{
     #elem
     #index
     #szuloElem
-    constructor(elem, index, szuloElem){
+    #torlesCallback
+    constructor(elem, index, szuloElem, torlesCallback){
         this.#elem = elem;
         this.#index = index;
         this.#szuloElem = szuloElem
+        this.#torlesCallback = torlesCallback;
         this.osszeallitEgyElem(this.#elem, this.#index, this.#szuloElem)
         this.gombElem = $(`.katt${this.#index}`)
         this.esemenyKezelo()
@@ -21,12 +23,13 @@ class EgyElem{
         szuloElem.append(text)
     }
 
-    esemenyKezelo(){
+    esemenyKezelo() {
         this.gombElem.on("click", () => {
-            const esemeny = new CustomEvent("torol", {detail:this.#index})
-            window.dispatchEvent(esemeny)
-        })
-    }
+            const e = new CustomEvent("torol", {detail:this.#elem.id})
+            window.dispatchEvent(e)
+            this.#torlesCallback(this.#elem.id);
+        });
+      }
 }
 
 export default EgyElem

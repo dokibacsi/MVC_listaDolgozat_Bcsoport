@@ -8,9 +8,7 @@ class Model {
   }
 
   torol(id) {
-    if (this.#lista[this.#index] == id) {
-      this.#lista[element].splice(this.#lista, id);
-    }
+    this.#lista = this.#lista.filter((item) => item.id !== id);
   }
 
   getList() {
